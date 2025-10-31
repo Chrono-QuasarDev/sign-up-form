@@ -1,0 +1,66 @@
+:root {
+
+  --fs-lg: 1.125rem;
+  --fs-4xl: 6rem; /* 64px (H1) */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Norse';
+  src: url(../fonts/Norse-Bold.woff2) format(woff2),
+       url(../fonts/Norse-Bold.woff) format(woff);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input, button {
+  font: inherit;
+}
+
+p, h1 {
+  overflow-wrap: break-word;
+}
+
+h1 { 
+  font-size: var(--fs-4xl);
+  font-family: 'Norse', sans-serif;
+  color: #fff;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+
+}
+
+.logo-container {
+  background-image: url(../images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+}
+
+.logo-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+  padding: 0.4rem;
+}
+
+.logo-container > div > img {
+  width: 5rem;
+}
