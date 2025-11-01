@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/style.css">
   <title>Sign-Up Form</title>
 </head>
@@ -15,39 +18,46 @@
       </div>
     </div>
 
-    <div>
-      <div>
+    <div class="content-container">
+      <div class="form-content">
         <p>This is not online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <i>now</i> to get started.</p>
         <p>You <i>know</i> you want to.</p>
       </div>
-      <div>
-        <form action="">
-          <legend>Let's do this!</legend>
+
+      <div class="form-container">
+      <h2>Let's do this!</h2>
+      <form action="">
+        <div>
           <label for="first_name">FIRST NAME</label>
           <input type="text" name="first-name"  id="first_name">
-
+        </div>
+        <div>
           <label for="second_name">SECOND NAME</label>
           <input type="text" name="second-name" id="second_name">
-
+        </div>
+        <div>
           <label for="email">EMAIL</label>
           <input type="email" name="email" id="email">
-
+        </div>
+        <div>
           <label for="phone_number">PHONE NUMBER</label>
           <input type="tel" name="phone-number" id="phone_number">
-
+        </div>
+        <div>
           <label for="password">PASSWORD</label>
-          <input type="password" name="password" id="password">
-
+          <input type="password" name="password" id="password" class="error">
+        </div>
+        <div>
           <label for="confirm_password">CONFIRM PASSWORD</label>
-          <input type="password" name="confirm-password" id="confirm_password">
-        </form>
+          <input type="password" name="confirm-password" id="confirm_password" class="error">
+        </div>
+      </form>
       </div>
-
-      <div>
+      <div class="sign-up">
         <button type="submit">Create Account</button>
         <p>Already have account? <a href="#">Log in</a></p>
       </div>
-    </div>
+      </div>
   </div>
 </body>
 </html>
