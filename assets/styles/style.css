@@ -50,6 +50,7 @@ h1 {
   background-position: center;
   background-size: cover;
   width: 80%;
+  position: relative;
 }
 
 .logo-container > div {
@@ -64,6 +65,18 @@ h1 {
 
 .logo-container > div > img {
   width: 5rem;
+}
+
+.credit-author {
+  color: #fff;
+  font-size: var(--fs-lg);
+  position: absolute;
+  bottom: 100px;
+  right: 75px;
+}
+
+.credit-author a {
+  color: #c3dfad;
 }
 
 .content-container {
